@@ -7,18 +7,18 @@ const Header = () => (
       <div className="container">
         <div className="nav-left">
           <Link className="nav-item" to="/">
-            <img src="/images/gs.svg"/><h1 className="title is-5" style={{paddingLeft: "5px"}}>Nathan Dalal</h1>
+            <h1 className="title is-5" style={{paddingLeft: "5px"}}>Jack He</h1>
           </Link>
         </div>
         <div className="nav-right">
-          <a className="nav-item" href="https://github.com/nathandalal">
+          <a className="nav-item" href="https://github.com/projectsByJackHe" target="_blank">
             <span className="icon"><i className="fa fa-github"/></span>
           </a>
-          <a className="nav-item" href="https://linkedin.com/in/nathandalal">
+          <a className="nav-item" href="https://www.linkedin.com/in/jack-he-845587161/" target="_blank">
             <span className="icon"><i className="fa fa-linkedin"/></span>
           </a>
           <span className="nav-item">
-            <a className="button is-success is-inverted" href="/assets/resume.pdf">
+            <a className="button is-success is-inverted" href="/assets/resume.pdf" target="_blank">
               <span className="icon"><i className="fa fa-id-card"/></span>
               <span style={{paddingLeft: "5px"}}>Résumé</span>
             </a>
