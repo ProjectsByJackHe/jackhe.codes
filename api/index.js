@@ -24,7 +24,7 @@ var availableRoutes = [
     routename: '/miscellaneous',
     methods: ["GET"],
     description: [
-      "Gets the one record that helps fill out the card on Nathan."
+      "Gets the one record that helps fill out the card on Jack."
     ]
   }
 ]

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const JackCard = ({ isSmall = false, Status = "Stanford '19", Location = "Fremont, CA", Description = "Learning how to teach and teaching myself how to learn." }) => (
+const JackCard = ({ isSmall = false, Status = "UBC '23", Location = "Vancouver, BC", Description = "Letting my passions follow me, wherever I go!" }) => (
   <div className="columns">
     <div className={`column is-offset-4-desktop is-4-desktop is-offset-3-tablet is-6-tablet is-offset-1-mobile is-10-mobile`}>
       <div className="card container">
