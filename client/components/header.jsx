@@ -21,11 +21,11 @@ const Header = () => (
               <span className="icon"><i className="fa fa-linkedin"/></span>
             </a>
             <span className="navbar-item">
-              <a className="button is-success is-inverted" href="/assets/resume.pdf" target="_blank">
+              <a className="button is-success is-inverted" href="https://www.dropbox.com/s/5r2azf853znamas/Jack_He_Resume.pdf?dl=0" target="_blank">
                 <span className="icon"><i className="fa fa-id-card"/></span>
                 <span style={{paddingLeft: "5px"}}>Résumé</span>
               </a>
-            </span>
+            </span> 
           </div>
         </div>
 

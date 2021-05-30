@@ -7,9 +7,9 @@ const Footer = () => (
         <p>If you're bored, check out the <a href="/api">API for this website</a>.</p>
         <div className="container">
           <a className="icon fas fa-lg" href="https://github.com/projectsByJackHe" target="_blank">
-            <i className="fa fa-github"/>
+            <i className="fa fa-github"/> 
           </a>
-          <a style={{margin: "0 15px"}} className="icon fas fa-lg" href="/assets/resume.pdf">
+          <a style={{margin: "0 15px"}} className="icon fas fa-lg" href="https://www.dropbox.com/s/5r2azf853znamas/Jack_He_Resume.pdf?dl=0" target = "_blank">
             <i className="fa fa-id-card"/>
           </a>
           <a className="icon fas fa-lg" href="https://www.linkedin.com/in/jack-he-845587161/" target="_blank">
