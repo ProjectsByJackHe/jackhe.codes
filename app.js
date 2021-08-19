@@ -7,7 +7,9 @@ const apiRoutes = require('./api/index')
 const app = express()
 
 app.use('/api', apiRoutes)
-
+app.get('/resume', (req, res) => {
+  return apiRoutes.get("/api/resume")
+})
 app.engine('njk', engines.nunjucks)
 app.set('view engine', 'njk')
 app.set('views', __dirname + '/views')

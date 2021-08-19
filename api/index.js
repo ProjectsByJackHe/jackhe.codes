@@ -26,6 +26,14 @@ var availableRoutes = [
     description: [
       "Gets the one record that helps fill out the card on Jack."
     ]
+  },
+  {
+    title: 'Resume',
+    routename: '/resume',
+    methods: ["GET"],
+    description: [
+      "Get the most Jack's resume."
+    ]
   }
 ]
 
@@ -41,6 +49,7 @@ const internalServerError =
 const badUserRequestError = 
     (res, reason) => res.status(400).send({ error: `Invalid user request to ${route} API endpoint.`, reason: reason })
 
+
 router.get(availableRoutes[0].routename, (req, res) => {
   try { AirtableHandler.getExperiences().then(answer => res.send(answer)) }
   catch (e) { return internalServerError(res, availableRoutes[0].routename, e) }
@@ -48,6 +57,11 @@ router.get(availableRoutes[0].routename, (req, res) => {
 
 router.get(availableRoutes[1].routename, (req, res) => {
   try { AirtableHandler.getMiscellaneous().then(answer => res.send(answer)) }
+  catch (e) { return internalServerError(res, availableRoutes[0].routename, e) }
+})
+
+router.get(availableRoutes[2].routename, (req, res) => {
+  try { AirtableHandler.getResume().then(answer => res.send(answer)) }
   catch (e) { return internalServerError(res, availableRoutes[0].routename, e) }
 })
 

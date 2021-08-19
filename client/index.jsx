@@ -13,7 +13,8 @@ class Index extends React.Component {
     super(props)
     this.state = {
       list: [],
-      misc: {}
+      misc: {}, 
+      resume: {}
     }
   }
 
@@ -22,7 +23,10 @@ class Index extends React.Component {
     .then(({ data }) => this.setState({ list: data }))
 
     axios.get("/api/miscellaneous")
-    .then(({ data }) => this.setState({ misc: data }))   
+    .then(({ data }) => this.setState({ misc: data }))
+    
+    axios.get("/api/resume")
+    .then(({ data }) => this.setState({ resume: data }))   
   }
 
   render() {
@@ -33,18 +37,18 @@ class Index extends React.Component {
       { path: "/fun",         name: "For Fun",      icon: "dribbble"}
     ]
 
-    let { list, misc } = this.state
+    let { list, misc, resume } = this.state
 
     return (
       <Router>
         <section className="hero is-fullheight">
-          <Header />
+          <Header resume = {resume}/>
           <div id="main-body" className="hero-body">
             <div className="container has-text-centered">
               <Route component={(props) => <Content routes={routes} list={list} misc={misc} {...props}/>}/>
             </div>
           </div>
-          <Footer />
+          <Footer resume = {resume} />
         </section>
       </Router>
     )

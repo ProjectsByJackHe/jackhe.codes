@@ -19,3 +19,12 @@ module.exports.getMiscellaneous = () => new Promise((resolve, reject) => {
   		resolve(records[0].fields)
 	})
 })
+
+module.exports.getResume = () => new Promise((resolve, reject) => {
+	base('resume').select({
+		view: 'Grid view'
+	}).firstPage(function(err, records) {
+    if (err) reject(err)
+  		resolve(records[0].fields)
+	})
+})
